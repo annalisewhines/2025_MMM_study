@@ -5,12 +5,12 @@ Annalise Whines, Sara Mehrhof, Tory Eisenlohr-Moul & Camilla Nord
 
 ---
 
-### Data
+## Data
 
 ---
 
-### Code
+## Code
 
 ---
 
-#### Analyses
+### Analyses
