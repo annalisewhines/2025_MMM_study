@@ -90,9 +90,7 @@ descrip <- bind_rows(
 shaps_mlm <- stan_glmer(
   total_scaled ~ cycle_phase + age + group + (1 | subj_id),
   data = mhq_analysis %>% filter(measure == "shaps"),
-  iter = 4000,
-  warmup = 2000,
-  chains = 4,
+  iter = 2000,
   seed = 123
 )
 
@@ -105,9 +103,7 @@ print(bayestestR::hdi(shaps_mlm), digits = 3)
 phq_mlm <- stan_glmer(
   total_scaled ~ cycle_phase + age + group + (1 | subj_id),
   data = mhq_analysis %>% filter(measure == "phq"),
-  iter = 4000,
-  warmup = 2000,
-  chains = 4,
+  iter = 2000,
   seed = 123
 )
 
@@ -119,9 +115,7 @@ print(bayestestR::hdi(phq_mlm), digits = 3)
 stai_mlm <- stan_glmer(
   total_scaled ~ cycle_phase + age + group + (1 | subj_id),
   data = mhq_analysis %>% filter(measure == "stai"),
-  iter = 4000,
-  warmup = 2000,
-  chains = 4,
+  iter = 2000,
   seed = 123
 )
 
@@ -133,9 +127,7 @@ print(bayestestR::hdi(stai_mlm), digits = 3)
 pms_mlm <- stan_glmer(
   total_scaled ~ cycle_phase + age + group + (1 | subj_id),
   data = mhq_analysis %>% filter(measure == "pms"),
-  iter = 4000,
-  warmup = 2000,
-  chains = 4,
+  iter = 2000,
   seed = 123
 )
 
@@ -232,3 +224,7 @@ combined_styled <- combined_plot +
 ggsave("psychiatric_combined.png", 
        plot = combined_styled,
        width = 10, height = 8, dpi = 800, bg = "white")
+
+# Save data for change analysis
+saveRDS(mhq_analysis, here("2025_MMM_study", "data", "processed_dat", "main_analysis", "mhq_analysis.RDS"))
+
