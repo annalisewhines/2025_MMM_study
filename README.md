@@ -30,7 +30,7 @@ Model-based analyses of task data, run separately for the periovulatory and peri
 **2 Mental health analyses**
 Comparison of mental health questionnaire measures across the periovulatory and perimenstrual phases.
 
-**3 Task – main analyses**
+**3 Task analyses**
 Comparison of computational model parameters (effort sensitivity, reward sensitivity and acceptance bias) across the periovulatory and perimenstrual phases.
 
 **4 Change analyses**
