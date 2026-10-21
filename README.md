@@ -25,13 +25,17 @@ All code used to run analyses for our study can be found in the `/code` director
 All code used for our main study analyses can be found in the `/analyses` directory. The analysis steps are structured as follows:
 
 **1 Task – model based**
+
 Model-based analyses of task data, run separately for the periovulatory and perimenstrual phases. Includes model fitting, checking for model convergence, model comparison and posterior predictive checks.
 
 **2 Mental health analyses**
+
 Comparison of mental health questionnaire measures across the periovulatory and perimenstrual phases.
 
 **3 Task analyses**
+
 Comparison of computational model parameters (effort sensitivity, reward sensitivity and acceptance bias) across the periovulatory and perimenstrual phases.
+
 
 **4 Change analyses**
 Associations between cycle-related changes in model parameters and changes in mental health measures.
